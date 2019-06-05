@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const argv = require("argv");
 const parse = require("csv-parse/lib/sync");
 const puppeteer = require("puppeteer");

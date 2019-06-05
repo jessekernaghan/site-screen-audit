@@ -8,14 +8,6 @@ Some quick notes:
 - the hope for this in the future is potentially using visual diffing to process large sitemaps but only extract unique screens from it
 - do with it as you want/will
 
-## Usage
-
-Run the following command from the root of the project:
-
-```
-node index.js --config=path/to/config.json --inputfile=path/to/sitemap.csv --outputdir=path/to/outputdir
-```
-
 ## Configuration
 
 Example configuration:
@@ -49,3 +41,19 @@ The `force` key also accepts a wildcard match, but usually it would be used to t
 ## CSV Input
 
 Please refer to the `example.sitemap.csv` for the format that this script accepts. It takes the first column and starts on the second row (index 1) to prevent header collision.
+
+## Usage
+
+If you don't want to create a global script, run the following command from the root of the project:
+
+```
+node index.js --config=path/to/config.json --inputfile=path/to/sitemap.csv --outputdir=path/to/outputdir
+```
+
+If you do, simply run `npm link` in the project root then from any directory you can run:
+
+```
+screen-audit --config=path/to/config.json --inputfile=path/to/sitemap.csv --outputdir=path/to/outputdir
+```
+
+**Note**: make sure that the `./index.js` file is executable.
