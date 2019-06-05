@@ -1,0 +1,18 @@
+{
+  "name": "visual-site-auditor",
+  "version": "1.0.0",
+  "description": "scrape and create images of all pages in a sitemap that are unique for auditing purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "argv": "0.0.2",
+    "csv-parse": "^4.4.3",
+    "filenamify-url": "^2.1.0",
+    "puppeteer": "^1.17.0",
+    "wildcard": "^1.1.2"
+  }
+}
