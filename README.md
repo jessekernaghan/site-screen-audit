@@ -50,7 +50,7 @@ If you don't want to create a global script, run the following command from the 
 node index.js --config=path/to/config.json --inputfile=path/to/sitemap.csv --outputdir=path/to/outputdir
 ```
 
-If you do, simply run `npm link` in the project root then from any directory you can run:
+If you want to run from anywhere, simply run `npm link` in the project root then from any directory you can run:
 
 ```
 screen-audit --config=path/to/config.json --inputfile=path/to/sitemap.csv --outputdir=path/to/outputdir
