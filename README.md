@@ -45,3 +45,7 @@ The `repeat` key uses a wildcard match to skip repeated matches against a patter
 ### force
 
 The `force` key also accepts a wildcard match, but usually it would be used to try and grab specific screens you care about. This overrides anything that might have matched a blacklist or a repeat so be careful of unexpected conflicts!
+
+## CSV Input
+
+Please refer to the `example.sitemap.csv` for the format that this script accepts. It takes the first column and starts on the second row (index 1) to prevent header collision.
